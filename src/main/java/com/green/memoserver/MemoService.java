@@ -26,4 +26,8 @@ public class MemoService {
     public int deleteById(int id){
         return memoMapper.deleteById(id);
     }
+
+    public int modify(MemoPutReq p){
+        return memoMapper.modify(p);
+    }
 }

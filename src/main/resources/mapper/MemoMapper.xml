@@ -8,6 +8,17 @@
         SET title = #{title}
         ,   content = #{ctnts}
     </insert>
+
+    <!-- 메모 수정 -->
+    <update id="modify">
+        UPDATE memo
+        SET title = #{title},
+        content = #{ctnts}
+        WHERE id = #{memoId}
+    </update>
+
+
+
     <select id="findAll">
         SELECT id, title, created_at
         FROM memo
