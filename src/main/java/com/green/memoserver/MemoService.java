@@ -12,7 +12,10 @@ import java.util.List;
 public class MemoService {
 
     private final MemoMapper memoMapper;
+
+
     public int save(MemoPostReq p){
+
         return memoMapper.save(p);
     }
 
@@ -21,6 +24,7 @@ public class MemoService {
 
     }
     public MemoGetOneRes findById(int id){
+
         return memoMapper.findById(id);
     }
     public int deleteById(int id){
